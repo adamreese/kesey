@@ -2,7 +2,7 @@ events.push = function(e) {
   console.log("===> Building " + e.repo.cloneURL + " " + e.commit);
 
   var node = new Job("node-runner")
-  node.image = "technosophos/acid-node:latest"
+  node.image = "acidic.azurecr.io/acid-node"
   node.tasks = [
     "cd /src/hello",
     "npm install",
