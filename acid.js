@@ -1,5 +1,5 @@
 events.push = function(e) {
-  console.log("===> Building " + e.repo.cloneURL + " " + e.commit);
+  console.log("===> Building " + project.repo.cloneURL + " " + e.commit);
 
   var node = new Job("node-runner")
   node.image = "acidic.azurecr.io/acid-node"
